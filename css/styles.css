@@ -759,7 +759,7 @@
   }
   
   .feature__content > p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 2;
     color: #fff;
     font-weight: 500;
@@ -1566,9 +1566,9 @@
   }
   
   .center--arrow {
-    bottom: 32%;
-    right: 28%;
-    position: relative;
+    bottom: -27%;
+    right: -28%;
+    position: absolute;
   }
   .milligram-override {
     color: var(--color-headings);
