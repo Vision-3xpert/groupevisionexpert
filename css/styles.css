@@ -113,6 +113,9 @@
     padding-left: 6rem;
     color: #ff3678;
   }
+  .list--tick--footer {
+    padding-left: 1rem;
+  }
   
   .list--tick .list__item {
     padding-left: 0.5rem;
@@ -327,7 +330,7 @@
   }
   
   .plan__description {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     letter-spacing: 1px;
     display: block;
@@ -341,7 +344,10 @@
   .plan:hover {
     transform: scale(1.05);
   }
-  
+  .plan__unknown--price {
+    
+    font-size: 3.4rem;
+  }
   @media screen and (min-width: 1024px) {
     .plan__unknown {
       justify-items: center;
@@ -511,8 +517,12 @@
   }
   
   .block__heading {
+    font-size: 3rem;
     margin-top: 0;
     margin-bottom: 20px;
+  }
+  @media screen and (min-width: 575px){
+    .block__heading {font-size: 7rem;}
   }
   
   .block--beige {
@@ -548,7 +558,7 @@
   
   .container__heading {
     max-width: 1700px;
-    margin: 0 50px;
+    margin: 0 25px;
   }
   
   .container__feature {
@@ -932,10 +942,15 @@
   }
   
   .icon {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
-  
+  @media screen and (min-width:575px) {
+    .icon {
+      width: 200px;
+      height: 200px;
+    }
+  }
   .icon--small {
     width: 30px;
     height: 30px;
@@ -1014,7 +1029,7 @@
   
   .footer__propos > p {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 0;
     text-align: center;
   }
@@ -1396,7 +1411,7 @@
   }
   @media screen and (max-width: 575px) {
     .header--small {
-      font-size: 25px;
+      font-size: 20px;
     }
   }
   
@@ -1544,7 +1559,7 @@
   .fade:not(.show) {
     opacity: 1;
   }
-  .allo {
-    color: black;
-  }
   
+  .replace {
+    padding-left: 2rem;
+  }
