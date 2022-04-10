@@ -19,6 +19,42 @@
       property="og:url"
       content="https://www.groupevisionexpert/propos.com"
     />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1110132756200564");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1110132756200564&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
     <title>Soumission - Vision 3xpert</title>
     <link rel="icon" type="image/jpg" href="../images/favicon.png" />
 
@@ -128,7 +164,14 @@
         </div>
       </div>
     </nav>
-
+    <div class="mt-5 center">
+      <h1>Planifiez une soumission rapide avec nous!</h1>
+      <p>
+        Ce court Formulaire ne prend que quelques minutes à remplir et nous
+        permettra de s'adapter à vos besoins pour planifier une soumission!
+        Prenez note que ce dernier est gratuit et ne vous engage à rien!
+      </p>
+    </div>
     <form action="https://formspree.io/f/mdoblker" method="POST">
       <div class="mb-3">
         <h2>Nom/Prénom *</h2>

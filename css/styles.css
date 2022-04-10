@@ -531,7 +531,7 @@
     border-radius: 50px;
   }
   .block--intro {
-    background-image: url(../images/cadrages.jpg);
+    background-image: url(../images/cadrages.webp);
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
@@ -543,13 +543,6 @@
     color: white;
   }
   
-  .block--propos {
-    background-image: url(../images/cadrage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    color: #7b858b;
-  }
   
   .container__card {
     max-width: 1700px;
@@ -565,12 +558,7 @@
     max-width: 1700px;
     margin: 0 10px;
   }
-  /* TODO */
-  @media screen and (max-width: 660px) {
-    .block--dark {
-      background-image: url(../images/cadrage.jpg);
-    }
-  }
+  
   
   @media screen and (min-width: 760px) {
     .container__feature {

@@ -19,6 +19,42 @@
       property="og:url"
       content="https://www.groupevisionexpert/propos.com"
     />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1110132756200564");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1110132756200564&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
     <title>Nos Services - Vision 3xpert</title>
     <link rel="icon" type="image/jpg" href="../images/favicon.png" />
 
@@ -146,7 +182,7 @@
             environnement!
           </p>
         </div>
-        <img class="feature__image" src="../images/perchehaut.jpg" alt="#" />
+        <img class="feature__image" src="../images/perchehaut.webp" alt="#" />
       </article>
       <article
         class="grid grid--1x2 feature block--beige"
@@ -172,7 +208,7 @@
         <div>
           <img
             class="feature__image"
-            src="../images/Vision_Expert_photo-13.jpg"
+            src="../images/Vision_Expert_photo-13.webp"
             alt="#"
           />
         </div>
