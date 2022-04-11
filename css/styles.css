@@ -315,7 +315,7 @@
     margin: 0;
     text-align: center;
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   
   .plan__price {
@@ -330,7 +330,7 @@
   }
   
   .plan__description {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
     letter-spacing: 1px;
     display: block;
@@ -356,9 +356,6 @@
       margin-bottom: 1rem;
     }
   
-    .plan__name {
-      font-size: 2rem;
-    }
   
     .plan__price {
       font-size: 5rem;
@@ -747,7 +744,7 @@
   }
   
   .feature__content > p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 2;
     color: #fff;
     font-weight: 500;
@@ -1569,3 +1566,8 @@
   .replace {
     padding-left: 2rem;
   }
+@media screen and  (min-width: 1024px) {
+  
+  .fifty {
+   width: 50%;
+  }}
