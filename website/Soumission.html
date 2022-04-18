@@ -52,6 +52,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <!-- Meta Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
@@ -177,7 +182,11 @@
         Prenez note que ce dernier est gratuit et ne vous engage à rien!
       </p>
     </div>
-    <form action="https://formspree.io/f/mdoblker" method="POST">
+    <form
+      action="https://formsubmit.co/aae5049e5091541ff04962d0f5d76116"
+      method="POST"
+    >
+      <input type="hidden" name="_captcha" value="false" />
       <div class="mb-3">
         <h2>Nom/Prénom *</h2>
         <input type="text" autofocus required name="Nom/prénom" />
@@ -202,7 +211,7 @@
       <div class="mb-3">
         <h2>Numéro de Téléphone *</h2>
         <div class="phone-number">
-          <input type="number" required name="Numéro de Téléphone" />
+          <input id="phone" type="tel" required name="Numéro de Téléphone" />
         </div>
       </div>
       <div class="mb-3">
@@ -249,6 +258,11 @@
             >Avant de faire la soumission</label
           >
         </div>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://www.groupevisionexpert.com/Merci"
+        />
         <div>
           <input type="radio" name="Contact-Après" id="Après" />
           <label for="Après" class="label-inline"
@@ -285,6 +299,31 @@
       </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
+    <!-- ^^  form code  ^^ -->
+
+    <script>
+      function getIp(callback) {
+        fetch("https://ipinfo.io/json?token=7f1bdba1260b75", {
+          headers: { Accept: "application/json" },
+        })
+          .then((resp) => resp.json())
+          .catch(() => {
+            return {
+              country: "us",
+            };
+          })
+          .then((resp) => callback(resp.country));
+      }
+
+      const phoneInputField = document.querySelector("#phone");
+      const phoneInput = window.intlTelInput(phoneInputField, {
+        initialCountry: "auto",
+        geoIpLookup: getIp,
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+    </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

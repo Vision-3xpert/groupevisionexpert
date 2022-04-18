@@ -1161,12 +1161,7 @@
     margin-bottom: 3rem;
   }
   
-  .phone-number {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    gap: 3rem;
-  }
-  
+
   .mb-3 > h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -1571,3 +1566,31 @@
   .fifty {
    width: 50%;
   }}
+
+  .thank_you_image {
+    width: 50%
+  }
+
+  .greybox {
+    background-color: #f2f2f2;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+
+@media screen and (min-width: 992px){
+.greybox {
+    max-width: 960px;
+}}
+@media screen and(max-width: 768px){
+.greybox {
+    max-width: 720px;
+}}
+@media screen and (max-width: 576px){
+.greybox {
+    max-width: 540px;
+}
+}
